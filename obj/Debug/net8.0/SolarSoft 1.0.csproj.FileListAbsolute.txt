@@ -1,0 +1,65 @@
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\appsettings.json
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\SolarSoft 1.0.exe
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\SolarSoft 1.0.deps.json
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\SolarSoft 1.0.runtimeconfig.json
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\SolarSoft 1.0.dll
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\SolarSoft 1.0.pdb
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.csproj.AssemblyReference.cache
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.AssemblyInfoInputs.cache
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.AssemblyInfo.cs
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.csproj.CoreCompileInputs.cache
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\staticwebassets\msbuild.SolarSoft 1.0.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\staticwebassets\msbuild.build.SolarSoft 1.0.props
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SolarSoft 1.0.props
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SolarSoft 1.0.props
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\scopedcss\bundle\SolarSoft 1.0.styles.css
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSof.44825A52.Up2Date
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.dll
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\refint\SolarSoft 1.0.dll
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.pdb
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\SolarSoft 1.0.genruntimeconfig.cache
+C:\Users\Bubi\Desktop\Curro\Code\SolarSoft 1.0\obj\Debug\net8.0\ref\SolarSoft 1.0.dll
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\appsettings.json
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\SolarSoft 1.0.exe
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\SolarSoft 1.0.deps.json
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\SolarSoft 1.0.runtimeconfig.json
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\SolarSoft 1.0.dll
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\SolarSoft 1.0.pdb
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.csproj.AssemblyReference.cache
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.AssemblyInfoInputs.cache
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.AssemblyInfo.cs
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.csproj.CoreCompileInputs.cache
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.sourcelink.json
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\staticwebassets\msbuild.SolarSoft 1.0.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\staticwebassets\msbuild.build.SolarSoft 1.0.props
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SolarSoft 1.0.props
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SolarSoft 1.0.props
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\scopedcss\bundle\SolarSoft 1.0.styles.css
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSof.44825A52.Up2Date
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.dll
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\refint\SolarSoft 1.0.dll
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.pdb
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.genruntimeconfig.cache
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\ref\SolarSoft 1.0.dll

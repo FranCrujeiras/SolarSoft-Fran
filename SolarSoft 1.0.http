@@ -1,0 +1,6 @@
+@SolarSoft_1._0_HostAddress = http://localhost:5265
+
+GET {{SolarSoft_1._0_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
