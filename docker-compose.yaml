@@ -1,0 +1,13 @@
+﻿version: '3'
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Solar.2024!"
+    ports:
+      - "42888:1433"
+  api:
+    build: .
+    ports:
+      - "8080:80"
