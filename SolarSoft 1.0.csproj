@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>SolarSoft_1._0</RootNamespace>
     <UserSecretsId>8f640cbb-54d3-42e6-a87d-589df8221be9</UserSecretsId>
-    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
@@ -20,10 +20,6 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

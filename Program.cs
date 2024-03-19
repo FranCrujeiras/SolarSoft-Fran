@@ -1,4 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using SolarSoft_1._0.Context;
+
 var builder = WebApplication.CreateBuilder(args);
+var conn = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<AppDbContext>(
+    options => options.UseSqlServer(conn));
 
 // Add services to the container.
 
