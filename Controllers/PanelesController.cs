@@ -17,6 +17,16 @@ namespace SolarSoft_1._0.Controllers
     {
         private readonly AppDbContext _context;
 
+        private Dictionary<string, string> ModelosPanel = new Dictionary<string, string>()
+
+        {
+            {"Canadian Solar - HiKu7","2278x1134" },
+            {"JA Solar - Deep Blue 3.0","1722x1134" },
+            {"Jinko Solar - Tiger NEO","2465x1134" },
+            {"Trina Solar - Vertex S","1762x1134" },
+            {"Trina Solar - Vertex","2382x1134" }
+        };
+
         public PanelesController(AppDbContext context)
         {
             _context = context;
@@ -44,7 +54,7 @@ namespace SolarSoft_1._0.Controllers
         public async Task<ActionResult<IEnumerable<Panel>>> GetPaneles()
         {
             return await _context.Paneles.ToListAsync();
-        }       
+        }
 
         // GET: api/Panels/5
         [HttpGet("GetId/{Id}")]
@@ -58,7 +68,7 @@ namespace SolarSoft_1._0.Controllers
             }
 
             return panel;
-        }        
+        }
 
         [HttpGet("getModelos/{ModeloPanel}")]
         public async Task<ActionResult<IEnumerable<Panel>>> GetPanel(string ModeloPanel)
@@ -109,7 +119,7 @@ namespace SolarSoft_1._0.Controllers
             }
             else
             {
-                if (Latitud >90 || Latitud < -90) 
+                if (Latitud > 90 || Latitud < -90)
                 {
                     return BadRequest("El valor de la Latitud debe ser entre -90º y 90º.");
                 }
@@ -120,7 +130,7 @@ namespace SolarSoft_1._0.Controllers
                     await _context.SaveChangesAsync();
                     return Ok("Latitud modifcada correctamente");
                 }
-                
+
             }
         }
         [HttpPut("PutLongitud/{Longitud}")]
@@ -150,6 +160,10 @@ namespace SolarSoft_1._0.Controllers
         [HttpPut("PutModeloPanel/{ModeloPanel}")]
         public async Task<IActionResult> PutModeloPanel(int Id, string ModeloPanel)
         {
+            if (!ModelosPanel.Keys.Any(X => X.ToLower().Equals(ModeloPanel.ToLower())))
+            {
+                return BadRequest("El modelo de panel no es válido");
+            }
             var panel = await _context.Paneles.FindAsync(Id);
             if (panel == null)
             {
@@ -229,7 +243,7 @@ namespace SolarSoft_1._0.Controllers
             }
             else
             {
-                if (AnchoTerreno <= 0 )
+                if (AnchoTerreno <= 0)
                 {
                     return BadRequest("El valor del ancho del terreno debe ser entre un valor positivo.");
                 }
@@ -243,7 +257,7 @@ namespace SolarSoft_1._0.Controllers
 
             }
         }
-            [HttpPut("PutLargoTerreno/{LargoTerreno}")]
+        [HttpPut("PutLargoTerreno/{LargoTerreno}")]
         public async Task<IActionResult> PutLargoTerreno(int Id, double LargoTerreno)
         {
             var panel = await _context.Paneles.FindAsync(Id);
@@ -301,7 +315,7 @@ namespace SolarSoft_1._0.Controllers
             }
             else
             {
-                if (AnguloEstructura != 0 ^ AnguloEstructura !=15 ^ AnguloEstructura!= 30)
+                if (AnguloEstructura != 0 ^ AnguloEstructura != 15 ^ AnguloEstructura != 30)
                 {
                     return BadRequest("El valor del ángulo de la estructura debe ser 0º, 15º o 30º.");
                 }
@@ -364,5 +378,66 @@ namespace SolarSoft_1._0.Controllers
             return _context.Paneles.Any(e => e.Id == Id);
         }
         #endregion
+
+        #region Aux Functions
+
+        //SEPARACIÓN MÍNIMA ENTRE PANELES//
+        //Función que calcula la separación mínima entre paneles en función de la latitud, la longitud del panel y el ángulo de la estructura
+        private double SeparacionMinima(double Latitud, double LargoPanel, int AnguloEstructura)
+        {
+            //Se pasan los ángulos a radianes
+            var latitudRad = Latitud * Math.PI / 180;
+            var AnguloEstructuraRad = AnguloEstructura * Math.PI / 180;
+            //Se calcula la altura solar en el solsticio de invierno para la latitud indicada, a las 2pm hora solar.
+            //Nota: La declinación solar en el solsticio de invierno es siempre de -23.5º para cualquier parte del mundo.
+            double anguloHorarioRad = 30 * Math.PI / 180;
+            double declinacionRad = -23.5 * Math.PI / 180;
+            double alturaSolar = Math.Asin(Math.Sin(latitudRad) * Math.Sin(declinacionRad) +
+                                      Math.Cos(latitudRad) * Math.Cos(declinacionRad) * Math.Cos(anguloHorarioRad));
+
+            //Se procede al cálculo de la separación mínima entre paneles para evitar sombras en las dos horas anteriores y posteriores al mediodía solar
+
+            double Separacion = LargoPanel * Math.Cos(AnguloEstructuraRad) + LargoPanel * (Math.Cos(anguloHorarioRad) * Math.Sin(AnguloEstructuraRad) / Math.Tan(alturaSolar));
+
+            return Separacion;
+        }
+
+        //NÚMERO DE PANELES//
+        //Función que calcula el número máximo de paneles que caben en un terreno rectangular
+        /*El total de paneles no deberían ser un número entero?*/
+        private int NumeroPaneles(double LargoPanel, double AnchoPanel, double LargoTerreno, double AnchoTerreno, double Latitud, int AnguloEstructura)
+        {
+            //Primero se calcula la separación entre paneles con orientación vertical
+            double Separacion = SeparacionMinima(Latitud, LargoPanel, AnguloEstructura);
+            //Luego se calcula la separación entre paneles con orientación horizontal
+            double SeparacionTumbados = SeparacionMinima(Latitud, AnchoPanel, AnguloEstructura); /*Esta función no se utiliza*/
+            //Se calcula el número de paneles que entran con una orientación vertical
+            int NumeroOrientacionVertical = Convert.ToInt32(Math.Floor(LargoTerreno / Separacion) * Math.Floor(AnchoTerreno / AnchoPanel));
+            //Se calcula el número de paneles que entran con una orientación 
+            int NumeroOrientacionHorizontal = Convert.ToInt32(Math.Floor(LargoTerreno / Separacion) * Math.Floor(AnchoTerreno / LargoPanel));
+
+            //Se evalúa en qué caso caben más paneles
+            if (NumeroOrientacionHorizontal <= NumeroOrientacionVertical)
+            {
+                return NumeroOrientacionVertical;
+            }
+            else
+            {
+                return NumeroOrientacionHorizontal;
+            }
+        }
+
+
+        //POTENCIA TOTAL//
+        //Función que calcula la potencia total en base al número total de paneles        
+        private int PotenciaTotal(int Potencia, double LargoPanel, double AnchoPanel, double LargoTerreno, double AnchoTerreno, double Latitud, int AnguloEstructura)
+        {
+            int Cantidad = Convert.ToInt32(Potencia * NumeroPaneles(LargoPanel, AnchoPanel, LargoTerreno, AnchoTerreno, Latitud, AnguloEstructura));
+
+            return Cantidad;
+        }
+        #endregion
+
+
     }
 }
