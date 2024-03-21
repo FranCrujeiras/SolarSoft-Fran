@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\controllers\\panelescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:controllers\\panelescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\controllers\\terrenocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:controllers\\terrenocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\models\\terreno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:models\\terreno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\models\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:models\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T10:51:54.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PanelesController.cs",
-              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\PanelesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PanelesController.cs",
-              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\PanelesController.cs",
-              "RelativeToolTip": "Controllers\\PanelesController.cs",
-              "ViewState": "AQIAAJQBAAAAAAAAAAAnwJ4BAAAMAAAA",
+              "Title": "TerrenoController.cs",
+              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\TerrenoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TerrenoController.cs",
+              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\TerrenoController.cs",
+              "RelativeToolTip": "Controllers\\TerrenoController.cs",
+              "ViewState": "AQIAAMwBAAAAAAAAAAAkwN8BAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T11:43:40.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -47,18 +64,17 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T08:49:52.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T08:49:52.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Panel.cs",
-              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Panel.cs",
-              "RelativeDocumentMoniker": "Models\\Panel.cs",
-              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Panel.cs",
-              "RelativeToolTip": "Models\\Panel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Terreno.cs",
+              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Terreno.cs",
+              "RelativeDocumentMoniker": "Models\\Terreno.cs",
+              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Terreno.cs",
+              "RelativeToolTip": "Models\\Terreno.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T15:36:14.3Z",
               "EditorCaption": ""

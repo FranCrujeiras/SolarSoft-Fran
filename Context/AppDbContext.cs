@@ -10,6 +10,6 @@ namespace SolarSoft_1._0.Context
         {
             
         }
-        public DbSet<Panel>Paneles { get; set; }
+        public DbSet<Terreno> Terrenos { get; set; }
     }
 }
