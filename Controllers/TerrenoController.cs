@@ -260,7 +260,7 @@ namespace SolarSoft_1._0.Controllers
                     terreno.PotenciaTotal = PotenciaTotal(terreno.Potencia, terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
-                    return Ok("Ancho del terreno modifcado correctamente");
+                    return Ok("Ancho del terreno modificado correctamente");
                 }
 
             }
@@ -402,55 +402,76 @@ namespace SolarSoft_1._0.Controllers
         //Función que calcula la separación mínima entre paneles en función de la latitud, la longitud del panel y el ángulo de la estructura
         private double SeparacionMinima(double Latitud, string ModeloPanel, int AnguloEstructura)
         {
-            //Se pasan los ángulos a radianes
-            var latitudRad = Latitud * Math.PI / 180;
-            var AnguloEstructuraRad = AnguloEstructura * Math.PI / 180;
-            //Se calcula la altura solar en el solsticio de invierno para la latitud indicada, a las 2pm hora solar.
-            //Nota: La declinación solar en el solsticio de invierno es siempre de -23.5º para cualquier parte del mundo.
-            double anguloHorarioRad = 30 * Math.PI / 180;
-            double declinacionRad = -23.5 * Math.PI / 180;
-            double alturaSolar = Math.Asin(Math.Sin(latitudRad) * Math.Sin(declinacionRad) +
-                                      Math.Cos(latitudRad) * Math.Cos(declinacionRad) * Math.Cos(anguloHorarioRad));
+            //Se evalúa el valor de la latitud. En caso de que ésta sea muy grande, se define una distancia fija
+            if (Latitud > 50 || Latitud < -50)
+            {
+                double Separacion = 6;
+                return Separacion;
+            }
+            //En caso de tener una latitud dentro de rango, se procede al cálculo de la separación teniendo en cuenta las sombras en el solsticio de invierno
+            else
+            {
+                //Se pasan los ángulos a radianes
+                var latitudRad = Latitud * Math.PI / 180;
+                var AnguloEstructuraRad = AnguloEstructura * Math.PI / 180;
+                //Se calcula la altura solar en el solsticio de invierno para la latitud indicada, a las 2pm hora solar.
+                //Nota: La declinación solar en el solsticio de invierno es siempre de -23.5º para cualquier parte del mundo.
+                double anguloHorarioRad = 30 * Math.PI / 180;
+                double declinacionRad = -23.5 * Math.PI / 180;
+                double alturaSolar = Math.Asin(Math.Sin(latitudRad) * Math.Sin(declinacionRad) +
+                                          Math.Cos(latitudRad) * Math.Cos(declinacionRad) * Math.Cos(anguloHorarioRad));
 
-            //Se obtiene la longitud del modelo de panel y se convierte a metros
-            double LargoPanel = ObtenerLargoPanel(ModeloPanel) / 1000;
+                //Se obtiene la longitud del modelo de panel y se convierte a metros
+                double LargoPanel = ObtenerLargoPanel(ModeloPanel) / 1000;
 
-            //Se procede al cálculo de la separación mínima entre paneles para evitar sombras en las dos horas anteriores y posteriores al mediodía solar
+                //Se procede al cálculo de la separación mínima entre paneles para evitar sombras en las dos horas anteriores y posteriores al mediodía solar
 
-            double Separacion = LargoPanel * Math.Cos(AnguloEstructuraRad) + LargoPanel * (Math.Cos(anguloHorarioRad) * Math.Sin(AnguloEstructuraRad) / Math.Tan(alturaSolar));
+                double Separacion = LargoPanel * Math.Cos(AnguloEstructuraRad) + LargoPanel * (Math.Cos(anguloHorarioRad) * Math.Sin(AnguloEstructuraRad) / Math.Tan(alturaSolar));
 
-            return Separacion;
+                return Separacion;
+            }
+            
         }
 
         //SEPARACIÓN MÍNIMA ENTRE PANELES TUMBADOS//
         //Función que calcula la separación mínima entre paneles tumbados en función de la latitud, la longitud del panel y el ángulo de la estructura
         private double SeparacionMinimaTumbados(double Latitud, string ModeloPanel, int AnguloEstructura)
         {
-            //Se pasan los ángulos a radianes
-            var latitudRad = Latitud * Math.PI / 180;
-            var AnguloEstructuraRad = AnguloEstructura * Math.PI / 180;
-            //Se calcula la altura solar en el solsticio de invierno para la latitud indicada, a las 2pm hora solar.
-            //Nota: La declinación solar en el solsticio de invierno es siempre de -23.5º para cualquier parte del mundo.
-            double anguloHorarioRad = 30 * Math.PI / 180;
-            double declinacionRad = -23.5 * Math.PI / 180;
-            double alturaSolar = Math.Asin(Math.Sin(latitudRad) * Math.Sin(declinacionRad) +
-                                      Math.Cos(latitudRad) * Math.Cos(declinacionRad) * Math.Cos(anguloHorarioRad));
+            //Se evalúa el valor de la latitud. En caso de que ésta sea muy grande, se define una distancia fija
+            if (Latitud > 50 || Latitud < -50)
+            {
+                double Separacion = 6;
+                return Separacion;
+            }
+            //En caso de tener una latitud dentro de rango, se procede al cálculo de la separación teniendo en cuenta las sombras en el solsticio de invierno
+            else
+            {
+                //Se pasan los ángulos a radianes
+                var latitudRad = Latitud * Math.PI / 180;
+                var AnguloEstructuraRad = AnguloEstructura * Math.PI / 180;
+                //Se calcula la altura solar en el solsticio de invierno para la latitud indicada, a las 2pm hora solar.
+                //Nota: La declinación solar en el solsticio de invierno es siempre de -23.5º para cualquier parte del mundo.
+                double anguloHorarioRad = 30 * Math.PI / 180;
+                double declinacionRad = -23.5 * Math.PI / 180;
+                double alturaSolar = Math.Asin(Math.Sin(latitudRad) * Math.Sin(declinacionRad) +
+                                          Math.Cos(latitudRad) * Math.Cos(declinacionRad) * Math.Cos(anguloHorarioRad));
 
-            //Se obtiene la anchura del modelo de panel y se convierte a metros
-            double AnchoPanel = ObtenerAnchoPanel(ModeloPanel) / 1000;
+                //Se obtiene la anchura del modelo de panel y se convierte a metros
+                double AnchoPanel = ObtenerAnchoPanel(ModeloPanel) / 1000;
 
-            //Se procede al cálculo de la separación mínima entre paneles para evitar sombras en las dos horas anteriores y posteriores al mediodía solar
+                //Se procede al cálculo de la separación mínima entre paneles para evitar sombras en las dos horas anteriores y posteriores al mediodía solar
 
-            double Separacion = AnchoPanel * Math.Cos(AnguloEstructuraRad) + AnchoPanel * (Math.Cos(anguloHorarioRad) * Math.Sin(AnguloEstructuraRad) / Math.Tan(alturaSolar));
+                double Separacion = AnchoPanel * Math.Cos(AnguloEstructuraRad) + AnchoPanel * (Math.Cos(anguloHorarioRad) * Math.Sin(AnguloEstructuraRad) / Math.Tan(alturaSolar));
 
-            return Separacion;
+                return Separacion;
+            }
             //Para la separación, sería igual
         }
 
-        //NÚMERO DE PANELES//
+        //NÚMERO DE PANELES//  //Función pendiente de revisión luego de aplicar herramientas gráficas//
         //Función que calcula el número máximo de paneles que caben en un terreno rectangular
         /*El total de paneles no deberían ser un número entero?*/
-        private int NumeroPaneles(string ModeloPanel, double LargoTerreno, double AnchoTerreno, double Latitud, int AnguloEstructura)
+        private int NumeroPaneles(string ModeloPanel, double LargoTerreno, double AnchoTerreno, double Latitud)
         {
 
             //Se obtienen las dimensiones del modelo de panel y se convierten a metros
@@ -458,22 +479,43 @@ namespace SolarSoft_1._0.Controllers
             double AnchoPanel = ObtenerAnchoPanel(ModeloPanel) / 1000;
 
             //Se calcula la separación entre paneles con orientación vertical
-            double Separacion = SeparacionMinima(Latitud, ModeloPanel, AnguloEstructura);
+            double Separacion15 = SeparacionMinima(Latitud, ModeloPanel, 15);
+            double Separacion30 = SeparacionMinima(Latitud, ModeloPanel, 30);
             //Luego se calcula la separación entre paneles con orientación horizontal
-            double SeparacionTumbados = SeparacionMinimaTumbados(Latitud, ModeloPanel, AnguloEstructura);
+            double SeparacionTumbados15 = SeparacionMinimaTumbados(Latitud, ModeloPanel, 15);
+            double SeparacionTumbados30 = SeparacionMinimaTumbados(Latitud, ModeloPanel, 30);
             //Se calcula el número de paneles que entran con una orientación vertical
-            int NumeroOrientacionVertical = Convert.ToInt32(Math.Floor(LargoTerreno / Separacion) * Math.Floor(AnchoTerreno / AnchoPanel));
+            int NumeroOrientacionVertical15 = Convert.ToInt32(Math.Floor(LargoTerreno / Separacion15) * Math.Floor(AnchoTerreno / AnchoPanel));
+            int NumeroOrientacionVertical30 = Convert.ToInt32(Math.Floor(LargoTerreno / Separacion30) * Math.Floor(AnchoTerreno / AnchoPanel));
             //Se calcula el número de paneles que entran con una orientación 
-            int NumeroOrientacionHorizontal = Convert.ToInt32(Math.Floor(LargoTerreno / SeparacionTumbados) * Math.Floor(AnchoTerreno / LargoPanel));
-
+            int NumeroOrientacionHorizontal15 = Convert.ToInt32(Math.Floor(LargoTerreno / SeparacionTumbados15) * Math.Floor(AnchoTerreno / LargoPanel));
+            int NumeroOrientacionHorizontal30 = Convert.ToInt32(Math.Floor(LargoTerreno / SeparacionTumbados30) * Math.Floor(AnchoTerreno / LargoPanel));
+            int mayor15 =0;
+            int mayor30 = 0;
             //Se evalúa en qué caso caben más paneles
-            if (NumeroOrientacionHorizontal <= NumeroOrientacionVertical)
+            if (NumeroOrientacionHorizontal15 <= NumeroOrientacionVertical15)
             {
-                return NumeroOrientacionVertical;
+                 mayor15 = NumeroOrientacionVertical15;
             }
             else
             {
-                return NumeroOrientacionHorizontal;
+                 mayor15 = NumeroOrientacionHorizontal15;
+            }
+            if (NumeroOrientacionHorizontal30 <= NumeroOrientacionVertical30)
+            {
+                mayor30 = NumeroOrientacionVertical30;
+            }
+            else
+            {
+                mayor30 = NumeroOrientacionHorizontal30;
+            }
+            if (mayor15 <= mayor30)
+            {
+                return mayor30;
+            }
+            else 
+            {
+                return mayor15;
             }
             //Ahora, podrías llamar a las funciones creadas desde aquí, añadiendo a las variables que recibe, el modelo de panel, para obtener su 
             //largo y ancho

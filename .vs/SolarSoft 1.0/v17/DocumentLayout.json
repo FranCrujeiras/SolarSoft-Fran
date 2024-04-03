@@ -38,8 +38,7 @@
               "RelativeToolTip": "Context\\AppDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T10:51:54.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T10:51:54.908Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "Controllers\\TerrenoController.cs",
               "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\TerrenoController.cs",
               "RelativeToolTip": "Controllers\\TerrenoController.cs",
-              "ViewState": "AQIAAMwBAAAAAAAAAAAkwN8BAAAJAAAA",
+              "ViewState": "AQIAAM0BAAAAAAAAAAAgwNUBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T11:43:40.833Z",
               "EditorCaption": ""
@@ -74,10 +73,9 @@
               "RelativeDocumentMoniker": "Models\\Terreno.cs",
               "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Terreno.cs",
               "RelativeToolTip": "Models\\Terreno.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA4AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwAUAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T15:36:14.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T15:36:14.3Z"
             }
           ]
         }
