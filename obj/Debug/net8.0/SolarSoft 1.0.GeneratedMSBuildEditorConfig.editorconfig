@@ -25,3 +25,39 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Bubi\Desktop\SolarSoft\SolarSoft
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Bubi/Desktop/SolarSoft/SolarSoft/Web App/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = V2ViIEFwcFxDb21wb25lbnRzXEFwcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bubi/Desktop/SolarSoft/SolarSoft/Web App/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = V2ViIEFwcFxDb21wb25lbnRzXFBhZ2VzXENvdW50ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bubi/Desktop/SolarSoft/SolarSoft/Web App/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = V2ViIEFwcFxDb21wb25lbnRzXFBhZ2VzXEVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bubi/Desktop/SolarSoft/SolarSoft/Web App/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = V2ViIEFwcFxDb21wb25lbnRzXFBhZ2VzXEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bubi/Desktop/SolarSoft/SolarSoft/Web App/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = V2ViIEFwcFxDb21wb25lbnRzXFBhZ2VzXFdlYXRoZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bubi/Desktop/SolarSoft/SolarSoft/Web App/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = V2ViIEFwcFxDb21wb25lbnRzXFJvdXRlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bubi/Desktop/SolarSoft/SolarSoft/Web App/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = V2ViIEFwcFxDb21wb25lbnRzXF9JbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bubi/Desktop/SolarSoft/SolarSoft/Web App/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = V2ViIEFwcFxDb21wb25lbnRzXExheW91dFxNYWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-f9ukllluus
+
+[C:/Users/Bubi/Desktop/SolarSoft/SolarSoft/Web App/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = V2ViIEFwcFxDb21wb25lbnRzXExheW91dFxOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-i1ceyutws6

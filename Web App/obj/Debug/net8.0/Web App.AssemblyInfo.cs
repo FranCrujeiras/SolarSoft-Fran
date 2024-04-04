@@ -11,13 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("8f640cbb-54d3-42e6-a87d-589df8221be9")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("SolarSoft 1.0")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Web_App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54c5f9206d99a08b9eaec23aada3fdaaf1ea3021")]
-[assembly: System.Reflection.AssemblyProductAttribute("SolarSoft 1.0")]
-[assembly: System.Reflection.AssemblyTitleAttribute("SolarSoft 1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyProductAttribute("Web_App")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Web_App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "x3Xw/7NVb51BWEHFxz5ilIbtV0p4zexap6DnTiMEGvtA+Vq/Ga0V4smW6d0KzLazsaRJHt4dOs1NDAvuiipCHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\Web App\\WebAppBlazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bubi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
