@@ -77,7 +77,7 @@ namespace SolarSoft_1._0.Controllers
             else
             {
                 terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
-                terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
                 terreno.PotenciaTotal = PotenciaTotal(terreno.Potencia, terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                 _context.Terrenos.Add(terreno);
                 await _context.SaveChangesAsync();
@@ -169,7 +169,7 @@ namespace SolarSoft_1._0.Controllers
                 {
                     terreno.Latitud = Latitud;
                     terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
                     terreno.PotenciaTotal = PotenciaTotal(terreno.Potencia, terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
 
                     _context.Entry(terreno).State = EntityState.Modified;                   
@@ -197,7 +197,7 @@ namespace SolarSoft_1._0.Controllers
                 {
                     terreno.Longitud = Longitud;
                     terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
                     terreno.PotenciaTotal = PotenciaTotal(terreno.Potencia, terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
@@ -227,7 +227,7 @@ namespace SolarSoft_1._0.Controllers
                 else
                 {
                     terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
                     terreno.PotenciaTotal = PotenciaTotal(terreno.Potencia, terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     terreno.ModeloPanel = ModeloPanel;
                     _context.Entry(terreno).State = EntityState.Modified;
@@ -256,7 +256,7 @@ namespace SolarSoft_1._0.Controllers
                 {
                     terreno.AnchoTerreno = AnchoTerreno;
                     terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
                     terreno.PotenciaTotal = PotenciaTotal(terreno.Potencia, terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
@@ -283,7 +283,7 @@ namespace SolarSoft_1._0.Controllers
                 {
                     terreno.LargoTerreno = LargoTerreno;
                     terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
                     terreno.PotenciaTotal = PotenciaTotal(terreno.Potencia, terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
@@ -310,7 +310,7 @@ namespace SolarSoft_1._0.Controllers
                 {
                     terreno.Potencia = PotenciaPanel;
                     terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
                     terreno.PotenciaTotal = PotenciaTotal(terreno.Potencia, terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
@@ -337,7 +337,7 @@ namespace SolarSoft_1._0.Controllers
                 {
                     terreno.AnguloEstructura = AnguloEstructura;
                     terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
                     terreno.PotenciaTotal = PotenciaTotal(terreno.Potencia, terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
@@ -527,7 +527,7 @@ namespace SolarSoft_1._0.Controllers
         private int PotenciaTotal(int Potencia, string ModeloPanel, double LargoTerreno, double AnchoTerreno, double Latitud, int AnguloEstructura)
         {
 
-            int Cantidad = Convert.ToInt32(Potencia * NumeroPaneles(ModeloPanel, LargoTerreno, AnchoTerreno, Latitud, AnguloEstructura));
+            int Cantidad = Convert.ToInt32(Potencia * NumeroPaneles(ModeloPanel, LargoTerreno, AnchoTerreno, Latitud));
 
             return Cantidad;
         }

@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución",
 		Class1.cs = Class1.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web App", "..\Web App\Web App.csproj", "{48D16F29-CCE2-4104-A183-040D13000861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppBlazor", "..\Web App\WebAppBlazor.csproj", "{48D16F29-CCE2-4104-A183-040D13000861}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
