@@ -66,7 +66,7 @@ namespace SolarSoft_1._0.Controllers
             {
                 return BadRequest("El modelo de panel introducido no existe");
             }
-            else if (terreno.AnguloEstructura != 0 && terreno.AnguloEstructura != 15 && terreno.AnguloEstructura != 30) //Tienes razón!            
+            else if (terreno.AnguloEstructura != 0 && terreno.AnguloEstructura != 15 && terreno.AnguloEstructura != 30)             
             {
                 return BadRequest("El ángulo de la estructura debe ser de 0º, 15º o 30º");
             }
