@@ -74,6 +74,10 @@ namespace SolarSoft_1._0.Controllers
             {
                 return BadRequest("El voltaje debe tener un valor positivo");
             }
+            else if (terreno.Azimuth <0 || terreno.Azimuth > 359)
+            {
+                return BadRequest("El ángulo de Azimuth debe estar entre 0º y 359º");
+            }
             else
             {
                 terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
@@ -370,7 +374,47 @@ namespace SolarSoft_1._0.Controllers
 
             }
         }
+        [HttpPut("PutAzimuth/{Azimuth}")]
+        public async Task<IActionResult> PutAzimuth(int Id, int Azimuth)
+        {
+            var terreno = await _context.Terrenos.FindAsync(Id);
+            if (terreno == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                if (Azimuth < 0||Azimuth>359)
+                {
+                    return BadRequest("El valor del ángulo de Azimuth debe estar entre 0º y 359º.");
+                }
+                else
+                {
+                    terreno.Azimuth  = Azimuth;
+                    _context.Entry(terreno).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                    return Ok("Ángulo de Azimuth modificado correctamente");
+                }
 
+            }
+        }
+        [HttpPut("PutInstalacionEstructura/{InstalacionEstructura}")]
+        public async Task<IActionResult> InstalacionEstructura(int Id, bool InstalacionEstructura)
+        {
+            var terreno = await _context.Terrenos.FindAsync(Id);
+            if (terreno == null)
+            {
+                return NotFound();
+            }
+            else
+            {                
+                    terreno.InstalacionEstructura = InstalacionEstructura;
+                    _context.Entry(terreno).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                    return Ok("Montaje de la instalación modificado correctamente");
+            }
+
+        }
         #endregion
 
         #region DELETEs

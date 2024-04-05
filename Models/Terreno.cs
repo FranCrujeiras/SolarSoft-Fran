@@ -11,6 +11,8 @@
         public required double LargoTerreno { get; set; }
         public required double AnchoTerreno { get; set; }
         public required int AnguloEstructura { get; set; }
+        public required int Azimuth { get; set; }
+        public bool InstalacionEstructura { get; set; }
         public double? Separacion { get; set; }
         public int? PotenciaTotal { get; set; }
         public int? TotalPaneles { get; set; }
