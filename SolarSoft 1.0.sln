@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución",
 		Class1.cs = Class1.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontBlazor", "..\FrontBlazor\FrontBlazor.csproj", "{450AD6EF-7558-4DA6-8DCC-CF10B604D7A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontBlazor", "..\FrontBlazor\FrontendSolarSoft\FrontBlazor.csproj", "{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{450AD6EF-7558-4DA6-8DCC-CF10B604D7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{450AD6EF-7558-4DA6-8DCC-CF10B604D7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{450AD6EF-7558-4DA6-8DCC-CF10B604D7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{450AD6EF-7558-4DA6-8DCC-CF10B604D7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
