@@ -58,8 +58,8 @@ namespace SolarSoft_1._0.Migrations
                     b.Property<int?>("Potencia")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PotenciaTotal")
-                        .HasColumnType("int");
+                    b.Property<double?>("PotenciaTotal")
+                        .HasColumnType("float");
 
                     b.Property<double?>("Separacion")
                         .HasColumnType("float");

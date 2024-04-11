@@ -76,7 +76,7 @@ namespace SolarSoft_1._0.Controllers
             }
             else
             {
-                terreno.Potencia = ObtenerPotenciaPanel(terreno.ModeloPanel);
+                terreno.Potencia = (int)ObtenerPotenciaPanel(terreno.ModeloPanel);
                 terreno.Voltaje = ObtenerVoltajePanel(terreno.ModeloPanel)/10;
                 terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
                 terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
@@ -228,7 +228,7 @@ namespace SolarSoft_1._0.Controllers
                 }
                 else
                 {
-                    terreno.Potencia = ObtenerPotenciaPanel(ModeloPanel);
+                    terreno.Potencia = (int)ObtenerPotenciaPanel(ModeloPanel);
                     terreno.Voltaje = ObtenerVoltajePanel(ModeloPanel);
                     terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel, terreno.AnguloEstructura);
                     terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
@@ -568,10 +568,10 @@ namespace SolarSoft_1._0.Controllers
 
         //POTENCIA TOTAL//
         //Función que calcula la potencia total en base al número total de paneles        
-        private int PotenciaTotal( string ModeloPanel, double LargoTerreno, double AnchoTerreno, double Latitud, int AnguloEstructura)
+        private double PotenciaTotal( string ModeloPanel, double LargoTerreno, double AnchoTerreno, double Latitud, int AnguloEstructura)
         {
-            int potencia = ObtenerPotenciaPanel(ModeloPanel);
-            int Cantidad = Convert.ToInt32(potencia * NumeroPaneles(ModeloPanel, LargoTerreno, AnchoTerreno, Latitud));
+            var potencia = ObtenerPotenciaPanel(ModeloPanel);
+            double Cantidad = Convert.ToDouble(potencia * NumeroPaneles(ModeloPanel, LargoTerreno, AnchoTerreno, Latitud) / 1000);
 
             return Cantidad;
         }
@@ -605,12 +605,12 @@ namespace SolarSoft_1._0.Controllers
                 return 0;
             }
         }
-        private int ObtenerPotenciaPanel(string modelo)
+        private double ObtenerPotenciaPanel(string modelo)
         {
             if (ModelosPanel.Any(x => x.Key.Equals(modelo)))
             {
                 var dimensiones = ModelosPanel.First(x => x.Key.Equals(modelo)).Value;
-                return int.Parse(dimensiones.Split('x')[2]);
+                return double.Parse(dimensiones.Split('x')[2]);
             }
             else
             {
