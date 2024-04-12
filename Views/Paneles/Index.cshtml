@@ -1,0 +1,73 @@
+﻿@model IEnumerable<SolarSoft_1._0.Models.Panel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreModelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Largo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ancho)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Potencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Voltaje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Material)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreModelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Largo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ancho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Potencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Voltaje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Material)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>

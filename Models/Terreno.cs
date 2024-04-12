@@ -16,5 +16,8 @@
         public double? Separacion { get; set; }
         public double? PotenciaTotal { get; set; }
         public int? TotalPaneles { get; set; }
+        public int? Arboles { get; set; }
+        public double? Emisiones {  get; set; }
+
     }
 }

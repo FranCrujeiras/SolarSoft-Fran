@@ -3,7 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\pages\\resultados.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\controllers\\panelescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:controllers\\panelescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\models\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:models\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\controllers\\terrenocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:controllers\\terrenocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Migrations\\20240412144542_TablaPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240412144542_TablaPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\pages\\nuevainstalacion.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
@@ -12,18 +29,10 @@
       "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\services\\terrenoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\controllers\\terrenocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:controllers\\terrenocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\models\\terreno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:models\\terreno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\models\\terreno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\pages\\resultados.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,46 +46,85 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Panel.cs",
+              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Panel.cs",
+              "RelativeDocumentMoniker": "Models\\Panel.cs",
+              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Panel.cs",
+              "RelativeToolTip": "Models\\Panel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T14:52:47.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PanelesController.cs",
+              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\PanelesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PanelesController.cs",
+              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\PanelesController.cs",
+              "RelativeToolTip": "Controllers\\PanelesController.cs",
+              "ViewState": "AQIAAL4AAAAAAAAAAAAYwNYAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T14:50:32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T14:47:44.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "20240412144542_TablaPanel.cs",
+              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Migrations\\20240412144542_TablaPanel.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240412144542_TablaPanel.cs",
+              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Migrations\\20240412144542_TablaPanel.cs",
+              "RelativeToolTip": "Migrations\\20240412144542_TablaPanel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T14:45:42.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TerrenoController.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\TerrenoController.cs",
               "RelativeDocumentMoniker": "Controllers\\TerrenoController.cs",
               "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\TerrenoController.cs",
               "RelativeToolTip": "Controllers\\TerrenoController.cs",
-              "ViewState": "AQIAACwCAAAAAAAAAAAWwDwCAAAQAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwJoAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T08:47:09.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Resultados.razor",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Resultados.razor",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Resultados.razor",
               "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Resultados.razor",
               "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Resultados.razor",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAcwKAAAABBAAAA",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAcwJwAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-09T14:06:18.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Terreno.cs",
-              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Terreno.cs",
-              "RelativeDocumentMoniker": "Models\\Terreno.cs",
-              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Terreno.cs",
-              "RelativeToolTip": "Models\\Terreno.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAzwBAAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T09:01:16.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Layout\\MainLayout.razor",
@@ -89,41 +137,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "TerrenoService.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\TerrenoService.cs",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\TerrenoService.cs",
               "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\TerrenoService.cs",
               "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\TerrenoService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA4wCEAAAAMAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAuwDwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T14:27:16.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "NuevaInstalacion.razor",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaInstalacion.razor",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaInstalacion.razor",
               "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaInstalacion.razor",
               "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaInstalacion.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAcAAAA",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAJkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-09T13:48:09.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Terreno.cs",
-              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Models\\Terreno.cs",
-              "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Models\\Terreno.cs",
-              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Models\\Terreno.cs",
-              "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Models\\Terreno.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAwwDMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:41:09.341Z",
               "EditorCaption": ""
             }
           ]

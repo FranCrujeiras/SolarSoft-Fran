@@ -82,6 +82,7 @@ namespace SolarSoft_1._0.Controllers
                 terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
                 terreno.PotenciaTotal = PotenciaTotal(terreno.ModeloPanel, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                 _context.Terrenos.Add(terreno);
+                terreno.Emisiones = 
                 await _context.SaveChangesAsync();
                 return CreatedAtAction("GetTerreno", new { Id = terreno.Id }, terreno);
             }                    

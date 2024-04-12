@@ -285,3 +285,5 @@ C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\refint\SolarSoft 1.0.
 C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.pdb
 C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.genruntimeconfig.cache
 C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\ref\SolarSoft 1.0.dll
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.RazorAssemblyInfo.cache
+C:\Users\Bubi\Desktop\SolarSoft\SolarSoft\obj\Debug\net8.0\SolarSoft 1.0.RazorAssemblyInfo.cs
