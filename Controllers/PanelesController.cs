@@ -20,7 +20,7 @@ namespace SolarSoft_1._0.Controllers
         {
             _context = context;
         }
-
+        #region GETs
         // GET: api/Paneles
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Panel>>> GetPanel()
@@ -41,7 +41,8 @@ namespace SolarSoft_1._0.Controllers
 
             return Panel;
         }
-
+        #endregion
+        #region PUTs
         // PUT: api/Paneles/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -72,6 +73,7 @@ namespace SolarSoft_1._0.Controllers
 
             return NoContent();
         }
+       
         // PUT: api/Panels/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkId=2123754
         [HttpPut("PutLargo/{Largo}")]
@@ -148,7 +150,7 @@ namespace SolarSoft_1._0.Controllers
 
             }
         }
-        [HttpPut("PutLargoPanel/{LargoPanel}")]
+        [HttpPut("PutVoltaje/{Voltaje}")]
         public async Task<IActionResult> PutVoltaje(int Id, double Voltaje)
         {
             var Panel = await _context.Panel.FindAsync(Id);
@@ -172,7 +174,9 @@ namespace SolarSoft_1._0.Controllers
 
             }
         }
-        [HttpPut("PutPotenciaPanel/{PotenciaPanel}")]
+
+
+        [HttpPut("PutNombreModelo/{NombreModelo}")]
         public async Task<IActionResult> PutNombreModelo(int Id, string NombreModelo)
         {
             var Panel = await _context.Panel.FindAsync(Id);
@@ -196,7 +200,8 @@ namespace SolarSoft_1._0.Controllers
 
             }
         }
-        [HttpPut("PutPotenciaPanel/{PotenciaPanel}")]
+
+        [HttpPut("PutMaterialPanel/{MaterialPanel}")]
         public async Task<IActionResult> PutMaterial(int Id, string Material)
         {
             var Panel = await _context.Panel.FindAsync(Id);
@@ -220,18 +225,48 @@ namespace SolarSoft_1._0.Controllers
 
             }
         }
-
+#endregion
+        #region POSTs
         // POST: api/Paneles
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Panel>> PostPanel(Panel Panel)
         {
-            _context.Panel.Add(Panel);
-            await _context.SaveChangesAsync();
+            if (Panel.Largo <= 0)
+            {
+                return BadRequest("La longitud del panel debe ser un valor positivo en milímetros");
+            }
+            else if (Panel.Ancho <= 0)
+            {
+                return BadRequest("El Ancho del panel debe ser un valor positivo en milímetros");
+            }
+            else if (Panel.Voltaje <= 0)
+            {
+                return BadRequest("El voltaje debe tener un valor positivo en Voltios");
+            }
+            else if (Panel.NombreModelo == "")
+            {
+                return BadRequest("El nombre del panel no puede estar vacío");
+            }
+            else if (Panel.Potencia <= 0)
+            {
+                return BadRequest("La potencia debe tener un valor positivo");
+            }
+            else if (Panel.Material == "")
+            {
+                return BadRequest("Es necesario especificar el material");
+            }
+            else
+            {
+                _context.Panel.Add(Panel);
+                await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPanel", new { id = Panel.Id }, Panel);
+                return CreatedAtAction("GetPanel", new { id = Panel.Id }, Panel);
+            }
+            
         }
-
+        #endregion
+        #region DELETE
         // DELETE: api/Paneles/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePanel(int id)
@@ -252,5 +287,6 @@ namespace SolarSoft_1._0.Controllers
         {
             return _context.Panel.Any(e => e.Id == id);
         }
+        #endregion
     }
 }

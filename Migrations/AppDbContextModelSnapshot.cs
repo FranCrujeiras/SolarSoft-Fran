@@ -90,11 +90,7 @@ namespace SolarSoft_1._0.Migrations
                     b.Property<double>("Longitud")
                         .HasColumnType("float");
 
-                    b.Property<string>("ModeloPanel")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("Potencia")
+                    b.Property<int>("ModeloPanelId")
                         .HasColumnType("int");
 
                     b.Property<double?>("PotenciaTotal")
@@ -106,12 +102,22 @@ namespace SolarSoft_1._0.Migrations
                     b.Property<int?>("TotalPaneles")
                         .HasColumnType("int");
 
-                    b.Property<double?>("Voltaje")
-                        .HasColumnType("float");
-
                     b.HasKey("Id");
 
+                    b.HasIndex("ModeloPanelId");
+
                     b.ToTable("Terrenos");
+                });
+
+            modelBuilder.Entity("SolarSoft_1._0.Models.Terreno", b =>
+                {
+                    b.HasOne("SolarSoft_1._0.Models.Panel", "ModeloPanel")
+                        .WithMany()
+                        .HasForeignKey("ModeloPanelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ModeloPanel");
                 });
 #pragma warning restore 612, 618
         }
