@@ -61,15 +61,15 @@ namespace SolarSoft_1._0.Controllers
         #endregion
         #region GETs
         // GET: api/Paneles
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Panel>>> GetPanel()
+        [HttpGet("GetPaneles")]
+        public async Task<ActionResult<IEnumerable<Panel>>> GetPaneles()
         {
             return await _context.Panel.ToListAsync();
         }
 
         // GET: api/Paneles/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Panel>> GetPanel(int id)
+        [HttpGet("GetPaneles/{id}")]
+        public async Task<ActionResult<Panel>> GetPaneles(int id)
         {
             var Panel = await _context.Panel.FindAsync(id);
 

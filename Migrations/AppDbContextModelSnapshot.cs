@@ -90,7 +90,7 @@ namespace SolarSoft_1._0.Migrations
                     b.Property<double>("Longitud")
                         .HasColumnType("float");
 
-                    b.Property<int>("ModeloPanelId")
+                    b.Property<int>("ModeloPanel")
                         .HasColumnType("int");
 
                     b.Property<double?>("PotenciaTotal")
@@ -104,20 +104,7 @@ namespace SolarSoft_1._0.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ModeloPanelId");
-
                     b.ToTable("Terrenos");
-                });
-
-            modelBuilder.Entity("SolarSoft_1._0.Models.Terreno", b =>
-                {
-                    b.HasOne("SolarSoft_1._0.Models.Panel", "ModeloPanel")
-                        .WithMany()
-                        .HasForeignKey("ModeloPanelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ModeloPanel");
                 });
 #pragma warning restore 612, 618
         }

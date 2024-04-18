@@ -17,11 +17,12 @@ namespace SolarSoft_1._0.Controllers
     {
         private readonly AppDbContext _context;
 
-
+        private PanelesController PanelesController { get; set; }
 
         public TerrenoController(AppDbContext context)
         {
             _context = context;
+            PanelesController = new PanelesController(_context);
         }
 
         #region POSTs
@@ -64,10 +65,11 @@ namespace SolarSoft_1._0.Controllers
             }
             else
             {
-
-                terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel.Largo, terreno.AnguloEstructura);
-                terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
-                terreno.PotenciaTotal = PotenciaTotal(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.ModeloPanel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                var request = await PanelesController.GetPaneles(terreno.ModeloPanel);
+                var panel = request.Value;
+                terreno.Separacion = SeparacionMinima(terreno.Latitud, panel.Largo, terreno.AnguloEstructura);
+                terreno.TotalPaneles = NumeroPaneles(panel.Largo, panel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
+                terreno.PotenciaTotal = PotenciaTotal(panel.Largo, panel.Ancho, panel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                 _context.Terrenos.Add(terreno);
                 terreno.Emisiones =
                 await _context.SaveChangesAsync();
@@ -139,10 +141,12 @@ namespace SolarSoft_1._0.Controllers
                 }
                 else
                 {
+                    var request = await PanelesController.GetPaneles(terreno.ModeloPanel);
+                    var panel = request.Value;
                     terreno.Latitud = Latitud;
-                    terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel.Largo, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
-                    terreno.PotenciaTotal = PotenciaTotal(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.ModeloPanel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.Separacion = SeparacionMinima(terreno.Latitud, panel.Largo, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(panel.Largo, panel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
+                    terreno.PotenciaTotal = PotenciaTotal(panel.Largo, panel.Ancho, panel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
 
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
@@ -167,10 +171,13 @@ namespace SolarSoft_1._0.Controllers
                 }
                 else
                 {
+
+                    var request = await PanelesController.GetPaneles(terreno.ModeloPanel);
+                    var panel = request.Value;
                     terreno.Longitud = Longitud;
-                    terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel.Largo, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel.Largo,terreno.ModeloPanel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
-                    terreno.PotenciaTotal = PotenciaTotal(terreno.ModeloPanel.Largo,terreno.ModeloPanel.Ancho,terreno.ModeloPanel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.Separacion = SeparacionMinima(terreno.Latitud, panel.Largo, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(panel.Largo,panel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
+                    terreno.PotenciaTotal = PotenciaTotal(panel.Largo,panel.Ancho,panel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
                     return Ok("Longitud modifcada correctamente");
@@ -195,10 +202,11 @@ namespace SolarSoft_1._0.Controllers
                 }
                 else
                 {
-                    //terreno.AnchoTerreno = AnchoTerreno;
-                    terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel.Largo, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
-                    terreno.PotenciaTotal = PotenciaTotal(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.ModeloPanel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    var request = await PanelesController.GetPaneles(terreno.ModeloPanel);
+                    var panel = request.Value;
+                    terreno.Separacion = SeparacionMinima(terreno.Latitud, panel.Largo, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(panel.Largo, panel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
+                    terreno.PotenciaTotal = PotenciaTotal(panel.Largo, panel.Ancho, panel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
                     return Ok("Ancho del terreno modificado correctamente");
@@ -222,10 +230,12 @@ namespace SolarSoft_1._0.Controllers
                 }
                 else
                 {
+                    var request = await PanelesController.GetPaneles(terreno.ModeloPanel);
+                    var panel = request.Value;
                     terreno.LargoTerreno = LargoTerreno;
-                    terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel.Largo, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
-                    terreno.PotenciaTotal = PotenciaTotal(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.ModeloPanel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.Separacion = SeparacionMinima(terreno.Latitud, panel.Largo, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(panel.Largo, panel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
+                    terreno.PotenciaTotal = PotenciaTotal(panel.Largo, panel.Ancho, panel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
                     return Ok("Largo del terreno modifcado correctamente");
@@ -251,10 +261,12 @@ namespace SolarSoft_1._0.Controllers
                 }
                 else
                 {
+                    var request = await PanelesController.GetPaneles(terreno.ModeloPanel);
+                    var panel = request.Value;
                     terreno.AnguloEstructura = AnguloEstructura;
-                    terreno.Separacion = SeparacionMinima(terreno.Latitud, terreno.ModeloPanel.Largo, terreno.AnguloEstructura);
-                    terreno.TotalPaneles = NumeroPaneles(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
-                    terreno.PotenciaTotal = PotenciaTotal(terreno.ModeloPanel.Largo, terreno.ModeloPanel.Ancho, terreno.ModeloPanel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
+                    terreno.Separacion = SeparacionMinima(terreno.Latitud, panel.Largo, terreno.AnguloEstructura);
+                    terreno.TotalPaneles = NumeroPaneles(panel.Largo, panel.Ancho, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud);
+                    terreno.PotenciaTotal = PotenciaTotal(panel.Largo, panel.Ancho, panel.Potencia, terreno.LargoTerreno, terreno.AnchoTerreno, terreno.Latitud, terreno.AnguloEstructura);
                     _context.Entry(terreno).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
                     return Ok("Ángulo de la estructura modificado correctamente");
