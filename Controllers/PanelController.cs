@@ -69,7 +69,7 @@ namespace SolarSoft_1._0.Controllers
 
         // GET: api/Paneles/5
         [HttpGet("GetPaneles/{id}")]
-        public async Task<ActionResult<Panel>> GetPaneles(int id)
+        public async Task<ActionResult<Panel>> GetPanel(int id)
         {
             var Panel = await _context.Panel.FindAsync(id);
 
