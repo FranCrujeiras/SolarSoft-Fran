@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolarSoft 1.0")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01c0abc04d4cf66ffd0bea4a242a36eab8c25a89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6eb9e89f2b9722a48eeb4fd4a33f56c0c757219f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolarSoft 1.0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolarSoft 1.0")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
