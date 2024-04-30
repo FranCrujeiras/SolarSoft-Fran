@@ -22,6 +22,70 @@ namespace SolarSoft_1._0.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("SolarSoft_1._0.Models.Bateria", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<double>("Capacidad")
+                        .HasColumnType("float");
+
+                    b.Property<string>("ModeloBateria")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Modulos")
+                        .HasColumnType("int");
+
+                    b.Property<double>("PotenciaSalida")
+                        .HasColumnType("float");
+
+                    b.Property<int>("VoltajeNominal")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Bateria");
+                });
+
+            modelBuilder.Entity("SolarSoft_1._0.Models.Inversor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<double>("EficienciaEuropea")
+                        .HasColumnType("float");
+
+                    b.Property<string>("ModeloInversor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumeroMPPT")
+                        .HasColumnType("int");
+
+                    b.Property<double>("PotenciaEntrada")
+                        .HasColumnType("float");
+
+                    b.Property<double>("PotenciaSalida")
+                        .HasColumnType("float");
+
+                    b.Property<int>("VoltajeMaximoMPPT")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VoltajeMinimoMPPT")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Inversor");
+                });
+
             modelBuilder.Entity("SolarSoft_1._0.Models.Panel", b =>
                 {
                     b.Property<int>("Id")
