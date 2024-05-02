@@ -46,7 +46,7 @@ namespace SolarSoft_1._0.Controllers
         #endregion
         #region POST
         // POST: api/Inversores
-        [HttpPost("{PostInversor}")]
+        [HttpPost("PostInversor")]
         public async Task<ActionResult<Inversor>> PostInversor(Inversor inversor)
         {
             if (inversor.ModeloInversor == "")

@@ -20,7 +20,7 @@ namespace SolarSoft_1._0.Controllers
         {
             _context = context;
         }
-
+        #region GETs
         // GET: api/Baterias
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Bateria>>> GetBateria()
@@ -41,7 +41,40 @@ namespace SolarSoft_1._0.Controllers
 
             return bateria;
         }
+        #endregion
+        #region POST
+        // POST: api/Baterias
+        [HttpPost("PostBateria")]
+        public async Task<ActionResult<Bateria>> PostBateria(Bateria bateria)
+        {
+            if (bateria.ModeloBateria == "")
+            {
+                return BadRequest("Es necesario especificar un nombre para el modelo");
+            }
+            else if (bateria.Capacidad <= 0)
+            {
+                return BadRequest("La capacidad debe tener un valor positivo");
+            }
+            else if (bateria.PotenciaSalida <= 0)
+            {
+                return BadRequest("La potencia de salida debe tener un valor positivo");
+            }
+            else if (bateria.Modulos < 1 )
+            {
+                return BadRequest("El número de módulos no puede ser menor que 1");
+            }
+            else if (bateria.VoltajeNominal <= 0)
+            {
+                return BadRequest("El voltaje debe ser un valor positivo");
+            }
 
+            _context.Bateria.Add(bateria);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetBateria", new { id = bateria.Id }, bateria);
+        }
+        #endregion
+        #region PUTs
         // PUT: api/Baterias/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -73,38 +106,135 @@ namespace SolarSoft_1._0.Controllers
             return NoContent();
         }
 
-        // POST: api/Baterias
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Bateria>> PostBateria(Bateria bateria)
+        [HttpPut("PutModeloBateria/{ModeloBateria}")]
+        public async Task<IActionResult> PutModeloBateria(int Id, string ModeloBateria)
         {
-            if (bateria.ModeloBateria == "")
+            var Bateria = await _context.Bateria.FindAsync(Id);
+            if (Bateria == null)
             {
-                return BadRequest("Es necesario especificar un nombre para el modelo");
+                return NotFound();
             }
-            else if (bateria.Capacidad <= 0)
+            else
             {
-                return BadRequest("La capacidad debe tener un valor positivo");
-            }
-            else if (bateria.PotenciaSalida <= 0)
-            {
-                return BadRequest("La potencia de salida debe tener un valor positivo");
-            }
-            else if (bateria.Modulos < 1 )
-            {
-                return BadRequest("El número de módulos no puede ser menor que 1");
-            }
-            else if (bateria.VoltajeNominal <= 0)
-            {
-                return BadRequest("El voltaje debe ser un valor positivo");
-            }
+                if (ModeloBateria == "")
+                {
+                    return BadRequest("El modelo de la Bateria debe tener un nombre.");
+                }
+                else
+                {
+                    Bateria.ModeloBateria = ModeloBateria;
+                    _context.Entry(Bateria).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                    return Ok("Nombre del modelo de batería modificado correctamene");
+                }
 
-            _context.Bateria.Add(bateria);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetBateria", new { id = bateria.Id }, bateria);
+            }
         }
 
+        [HttpPut("PutCapacidad/{Capacidad}")]
+        public async Task<IActionResult> PutCapacidad(int Id, int Capacidad)
+        {
+            var Bateria = await _context.Bateria.FindAsync(Id);
+            if (Bateria == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                if (Capacidad < 1)
+                {
+                    return BadRequest("El valor de la capacidad debe ser positivo");
+                }
+                else
+                {
+                    Bateria.Capacidad = Capacidad;
+
+                    _context.Entry(Bateria).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                    return Ok("Latitud modificada correctamente");
+                }
+
+            }
+        }
+        [HttpPut("PutPotenciaSalida/{PotenciaSalida}")]
+        public async Task<IActionResult> PutPotenciaSalida(int Id, int PotenciaSalida)
+        {
+            var Bateria = await _context.Bateria.FindAsync(Id);
+            if (Bateria == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                if (PotenciaSalida < 1)
+                {
+                    return BadRequest("El valor de la potencia de salida debe ser positivo");
+                }
+                else
+                {
+                    Bateria.PotenciaSalida = PotenciaSalida;
+                    _context.Entry(Bateria).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                    return Ok("Potencia de salida modificada correctamente");
+                }
+
+            }
+        }
+
+        [HttpPut("PutModulos/{Modulos}")]
+        public async Task<IActionResult> PutModulos(int Id, int Modulos)
+        {
+            var Bateria = await _context.Bateria.FindAsync(Id);
+            if (Bateria == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                if (Modulos <= 0)
+                {
+                    return BadRequest("El número de módulos debe ser un valor entero y positivo");
+                }
+                else
+                {
+                    Bateria.Modulos = Modulos;
+                    _context.Entry(Bateria).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                    return Ok("Número de módulos modificado correctamente");
+                }
+
+            }
+        }
+        [HttpPut("PutVoltajeNominal/{VoltajeNominal}")]
+        public async Task<IActionResult> PutVoltajeNominal(int Id, int VoltajeNominal)
+        {
+            var Bateria = await _context.Bateria.FindAsync(Id);
+            if (Bateria == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                if (VoltajeNominal <= 0)
+                {
+                    return BadRequest("El valor del Voltaje no puede ser negativo.");
+                }
+                else
+                {
+                    Bateria.VoltajeNominal = Convert.ToInt32(VoltajeNominal);
+                    _context.Entry(Bateria).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                    return Ok("Voltaje nominal modificado correctamente");
+                }
+
+            }
+        }
+
+
+
+
+        #endregion
+        #region DELETE
         // DELETE: api/Baterias/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBateria(int id)
@@ -125,5 +255,6 @@ namespace SolarSoft_1._0.Controllers
         {
             return _context.Bateria.Any(e => e.Id == id);
         }
+        #endregion
     }
 }
