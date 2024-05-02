@@ -3,6 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\pages\\mapa.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\controllers\\bateriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:controllers\\bateriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -24,9 +33,6 @@
       "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\pages\\nuevabateria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\controllers\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:controllers\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -44,9 +50,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\services\\i_inversorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\models\\bateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -69,9 +72,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|c:\\users\\bubi\\desktop\\solarsoft\\solarsoft\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1001B50-6DC0-4E1F-ACB8-CD86F2F8A6D7}|SolarSoft 1.0.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{741DBFE2-DBD2-41D0-ABD6-68097D7D8706}|..\\FrontBlazor\\FrontendSolarSoft\\FrontBlazor.csproj|c:\\users\\bubi\\desktop\\solarsoft\\frontblazor\\frontendsolarsoft\\components\\pages\\mapa.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -81,24 +81,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "NuevaBateria.razor",
-              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaBateria.razor",
-              "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaBateria.razor",
-              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaBateria.razor",
-              "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaBateria.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T14:09:02.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "InversoresController.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\InversoresController.cs",
               "RelativeDocumentMoniker": "Controllers\\InversoresController.cs",
@@ -106,12 +93,11 @@
               "RelativeToolTip": "Controllers\\InversoresController.cs",
               "ViewState": "AQIAAGsAAAAAAAAAAAAkwHgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T15:56:42.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T15:56:42.362Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Program.cs",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Program.cs",
@@ -124,19 +110,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\App.razor",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\App.razor",
               "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\App.razor",
               "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\App.razor",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAACcAAAAMAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T12:03:00.241Z"
+              "WhenOpened": "2024-04-30T12:03:00.241Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "NuevoInversor.razor",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevoInversor.razor",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevoInversor.razor",
@@ -144,12 +131,11 @@
               "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevoInversor.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T15:08:31.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T15:08:31.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "NuevaInstalacion.razor",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaInstalacion.razor",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaInstalacion.razor",
@@ -157,25 +143,24 @@
               "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaInstalacion.razor",
               "ViewState": "AQIAAJAAAAAAAAAAAAAAAKkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T09:22:05.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T09:22:05.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BateriasController.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\BateriasController.cs",
               "RelativeDocumentMoniker": "Controllers\\BateriasController.cs",
               "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\BateriasController.cs",
               "RelativeToolTip": "Controllers\\BateriasController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAA3AAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwBIAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T16:06:51.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Bateria.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Bateria.cs",
               "RelativeDocumentMoniker": "Models\\Bateria.cs",
@@ -183,12 +168,36 @@
               "RelativeToolTip": "Models\\Bateria.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T14:28:25.58Z",
+              "WhenOpened": "2024-04-29T14:28:25.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mapa.razor",
+              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Mapa.razor",
+              "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Mapa.razor",
+              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Mapa.razor",
+              "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Mapa.razor",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAUwHIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T14:33:18.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
+              "Title": "NuevaBateria.razor",
+              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaBateria.razor",
+              "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaBateria.razor",
+              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaBateria.razor",
+              "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevaBateria.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T14:09:02.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "InversorService.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\InversorService.cs",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\InversorService.cs",
@@ -200,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "PanelController.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\PanelController.cs",
               "RelativeDocumentMoniker": "Controllers\\PanelController.cs",
@@ -208,12 +217,11 @@
               "RelativeToolTip": "Controllers\\PanelController.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAxwFMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T15:06:32.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T15:06:32.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "IBateriaService.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\IBateriaService.cs",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\IBateriaService.cs",
@@ -221,12 +229,11 @@
               "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\IBateriaService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:37:56.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T13:37:56.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "I_InversorService.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\I_InversorService.cs",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\I_InversorService.cs",
@@ -238,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "NuevoPanel.razor",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevoPanel.razor",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevoPanel.razor",
@@ -246,12 +253,11 @@
               "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\NuevoPanel.razor",
               "ViewState": "AQIAAFoAAAAAAAAAAAAlwGkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-25T15:21:52.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-25T15:21:52.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "BateriaService.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\BateriaService.cs",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\BateriaService.cs",
@@ -259,12 +265,11 @@
               "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Services\\BateriaService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:26:22.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T13:26:22.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Bateria.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Models\\Bateria.cs",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Models\\Bateria.cs",
@@ -276,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "SideBarData.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Extensions\\SideBarData.cs",
               "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Extensions\\SideBarData.cs",
@@ -288,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Inversor.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Inversor.cs",
               "RelativeDocumentMoniker": "Models\\Inversor.cs",
@@ -300,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
@@ -312,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "TerrenoController.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Controllers\\TerrenoController.cs",
               "RelativeDocumentMoniker": "Controllers\\TerrenoController.cs",
@@ -324,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Terreno.cs",
               "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\SolarSoft\\Models\\Terreno.cs",
               "RelativeDocumentMoniker": "Models\\Terreno.cs",
@@ -333,18 +338,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T15:51:25.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Mapa.razor",
-              "DocumentMoniker": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Mapa.razor",
-              "RelativeDocumentMoniker": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Mapa.razor",
-              "ToolTip": "C:\\Users\\Bubi\\Desktop\\SolarSoft\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Mapa.razor",
-              "RelativeToolTip": "..\\FrontBlazor\\FrontendSolarSoft\\Components\\Pages\\Mapa.razor",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADQAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-24T14:33:18.845Z"
             }
           ]
         }
