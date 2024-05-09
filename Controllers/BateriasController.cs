@@ -16,20 +16,28 @@ namespace SolarSoft_1._0.Controllers
     {
         private readonly AppDbContext _context;
 
+        private Dictionary<string, double[]> PatronesConsumo = new Dictionary<string, double[]>()
+        {
+            {"Familia con hijos en edad escolar",[0.02,0.02,0.02,0.02,0.02,0.05,0.07,0.09,0.08,0.04,0.02,0.02,0.02,0.02,0.05,0.04,0.03,0.04,0.05,0.06,0.07,0.07,0.05,0.03] },
+            {"Una o dos personas que trabajan fuera de casa",[0.02,0.02,0.02,0.02,0.02,0.05,0.07,0.09,0.08,0.06,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.03,0.06,0.07,0.08,0.09,0.05,0.03]},
+            {"Siempre en casa",[0.02,0.02,0.02,0.02,0.02,0.02,0.03,0.05,0.06,0.06,0.05,0.04,0.04,0.06,0.05,0.04,0.04,0.04,0.05,0.05,0.06,0.07,0.06,0.03]},
+            {"Consumo nocturno",[0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.06,0.07,0.06,0.02,0.02,0.02,0.01,0.02,0.02,0.02,0.02,0.04,0.05,0.08,0.06,0.04,0.04]},
+            {"Producción del panel",[0,0,0,0,0,0,0,0.03,0.14,0.39,0.62,0.81,0.96,1,0.95,0.83,0.68,0.43,0.21,0.08,0.02,0,0,0]}
+        };
         public BateriasController(AppDbContext context)
         {
             _context = context;
         }
         #region GETs
         // GET: api/Baterias
-        [HttpGet]
+        [HttpGet("GetBaterias")]
         public async Task<ActionResult<IEnumerable<Bateria>>> GetBateria()
         {
             return await _context.Bateria.ToListAsync();
         }
 
         // GET: api/Baterias/5
-        [HttpGet("{id}")]
+        [HttpGet("GetBateria/{id}")]
         public async Task<ActionResult<Bateria>> GetBateria(int id)
         {
             var bateria = await _context.Bateria.FindAsync(id);
@@ -41,6 +49,27 @@ namespace SolarSoft_1._0.Controllers
 
             return bateria;
         }
+        //GET: api/Baterias/GETPatrones
+        [HttpGet("GetPatrones")]
+        public Dictionary<string, double[]> GetPatrones()
+        {
+            return PatronesConsumo;
+        }
+
+        //GET: api/Baterias/GETPatronString
+        [HttpGet("GetPatron/{patron}")]
+        public async Task<IActionResult> GetPatron(string patron)
+        {
+            if (PatronesConsumo.Keys.Any(x => x.Equals(patron)))
+            {
+                return Ok(PatronesConsumo.First(x => x.Key.Equals(patron)).Value);
+            }
+            else
+            {
+                return NotFound("No existe el patrón indicado");
+            }
+        }
+
         #endregion
         #region POST
         // POST: api/Baterias
@@ -59,7 +88,7 @@ namespace SolarSoft_1._0.Controllers
             {
                 return BadRequest("La potencia de salida debe tener un valor positivo");
             }
-            else if (bateria.Modulos < 1 )
+            else if (bateria.Modulos < 1)
             {
                 return BadRequest("El número de módulos no puede ser menor que 1");
             }
