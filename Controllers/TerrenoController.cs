@@ -120,7 +120,7 @@ namespace SolarSoft_1._0.Controllers
 
         }
 
-        [HttpGet("getPotenciaTotal0/{idTerreno}/{idPanel}")]
+        [HttpGet("getPotenciaTotal/{idTerreno}/{idPanel}")]
         public async Task<double> GetPotenciaTotal0(int idTerreno, int idPanel)
         {
             var terreno = await GetTerreno(idTerreno);
